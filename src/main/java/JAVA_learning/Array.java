@@ -56,7 +56,7 @@ public class Array {
     System.out.println(Arrays.equals(Array7, Array8));
 
     int[][][] Array9 = new int[2][2][3];
-    // Arrays.fill(Array9,0,1,1);
+    Arrays.fill(Array9,0,1,1);
     System.out.println(Arrays.toString(Array9[0][0]));
     System.out.println(Arrays.toString(Array9[0][1]));
     System.out.println(Arrays.toString(Array9[1][0]));

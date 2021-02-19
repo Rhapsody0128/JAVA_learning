@@ -20,26 +20,27 @@ public class Medthods {
     // 傳遞過來的參數資料，將被定義為此參數名稱在該方法區塊，進行邏輯運作使用  
     initData(10,50);
     initData(0.15,15);
-    initData();
+    // initData();
+    // 非static靜態medthod無法在main執行
     initData(15,0.5);
 
     // initData(3.15,50);
     // 在medthod以宣稱為int類別，所以若輸入double會報錯
   }
-  private static void initData(int x, int y){
+  public static void initData(int x, int y){
     System.out.println("x: " + x);
     System.out.println("y: " + y);
   }
-  private static void initData(double x, double y) {
+  public static void initData(double x, double y) {
     System.out.println("x: " + x);
     System.out.println("y: " + y);
   }
-  private static void initData(int x,double y) {
+  public static void initData(int x,double y) {
     System.out.println("x: " + y);
     System.out.println("y: " + x);
     System.out.println("z: " + y);
   }
-  private static void initData() {
+  public void initData() {
     System.out.println("x: " + 15);
     System.out.println("y: " + 20);
   }
