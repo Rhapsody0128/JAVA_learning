@@ -1,7 +1,7 @@
 package JAVA_learning;
 
 public class TestClass {
-  String name = "Class";
+  protected String name = "Class";
   int number = 0 ;
 
   public static void main( String[] args ){
@@ -16,10 +16,12 @@ public class TestClass {
   // 初始化方法就是建立的時候設定空值去改變，類似於JS的constructor
   TestClass(){
     number = 0;
+    System.out.printf("生成了%s",name);
   }
   TestClass(int newNumber){
     number = newNumber;
   }
+  
   void inherite( String target){
     System.out.printf("這個CLASS繼承字%s",target);
   }

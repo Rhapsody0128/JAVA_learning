@@ -1,6 +1,6 @@
 package JAVA_learning;
 
-public class ClassTest {
+public class ClassTest extends TestClass {
   public static void main(String[] args) {
     TestClass TestClass = new TestClass();
     System.out.println(TestClass.name);
@@ -13,6 +13,15 @@ public class ClassTest {
     TestClass.inherite(TestClass.name);
     System.out.println(TestClass.number);
     TestClass.delete();
-
+  }
+  ClassTest(){
+    System.out.printf("生成了%s", name);
+  }
+  void delete(){
+    System.out.println("刪除，只是測試拉");
+  }
+  void allDelete(){
+    this.delete();
+    super.delete();
   }
 }
