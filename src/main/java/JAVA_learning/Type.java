@@ -1,6 +1,7 @@
 package JAVA_learning;
 
 public class Type {
+  int a = 15;
   public static void main( String[] args ) {
     int num1 = 1;
     int num2 = 2;
