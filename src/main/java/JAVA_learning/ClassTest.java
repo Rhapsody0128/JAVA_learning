@@ -17,6 +17,7 @@ public class ClassTest extends TestClass {
   ClassTest(){
     System.out.printf("生成了%s", name);
   }
+  
   void delete(){
     System.out.println("刪除，只是測試拉");
   }
